@@ -213,3 +213,22 @@ function updateCart(tempCart) {
         })
     }
 }
+
+//remove from cart
+function removeFromCart(index) {
+    if (totalPrice !== 0){
+        totalPrice -= tempCart[index].price;
+        document.querySelector('.total_count').innerHTML = `${totalPrice}$`;
+    }
+    tempCart.splice(index, 1);
+    updateCart(tempCart);
+
+    if (tempCart.length === 0){
+        let btn_confirm = document.getElementById('button_confirm');
+        btn_confirm.disabled = true;
+        alert('Your cart is empty!');
+    }
+
+    localStorage.setItem('totalPrice', totalPrice);
+    return tempCart, totalPrice;
+}
