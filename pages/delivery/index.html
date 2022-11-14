@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Book Shop. Delivery Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../../assets/icons/book-icon.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header_container">
+                <div class="header_title">
+                    <a href="../main/index.html">
+                        <h1>Amazing Book Shop</h1>
+                    </a>
+                </div>
+                <div class="header_logo">
+                    <img src="../../assets/images/book_image.png" alt="header_logo">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="form_container">
+                <h2>Fill in the fields below:</h2>
+                <form id="form_delivery" action="#" name="form_delivery" method="post" onsubmit="return validate_form()">
+                    <div class="input_block">
+                        <label for="customer_name">Name <span>*</span></label>
+                        <input type="text" id="customer_name" name="customer_name" minlength="4" pattern="[A-Za-z]+" title="not less than 4 symbols, strings only" placeholder="your name *" required>
+                    </div>
+                    <div class="input_block">
+                        <label for="customer_surname">Surname <span>*</span></label>
+                        <input type="text" id="customer_surname" name="customer_surname" minlength="5" pattern="[A-Za-z]+" title="not less than 5 symbols, strings only" placeholder="your surname *" required>
+                    </div>
+                    <div class="input_block">
+                        <label for="delivery_date">Delivery date <span>*</span></label>
+                        <input type="date" id="date" name="delivery_date" placeholder="" required>
+                    </div>
+                    <div class="input_block">
+                        <label for="street">Street <span>*</span></label>
+                        <input type="text" id="street" name="street" minlength="5" pattern="[A-Za-z0-9]+"
+                            title="not less than 5 symbols, numbers are allowed" placeholder="street *" required>
+                    </div>
+                    <div class="input_block">
+                        <label for="house_number">House number <span>*</span></label>
+                        <input type="number" id="house_number" name="house_number" pattern="(^[1-9]+)(\d*)(-?)([0-9]*$)"
+                            title="numbers only" placeholder="house number *" required>
+                    </div>
+                    <div class="input_block">
+                        <label for="flat_number">Flat number <span>*</span></label>
+                        <input type="number" id="flat_number" name="flat_number" pattern="(^[1-9]+)(\d*)(-?)([0-9]*$)"
+                            title="numbers only, the dash symbol is allowed" placeholder="flat number *" required>
+                    </div>
+
+                    <div class="input_block">
+                        <fieldset>
+                            <legend> Choose the payment type: <span>*</span></legend>
+                                <div class="radio">
+                                    <input class="pay_option" type="radio" id="pay_cash" name="pay_method" value="Cash" required>
+                                    <label for="cash">Cash</label>
+                                </div>
+                                <div class="radio">
+                                    <input class = "pay_option" type="radio" id="pay_card" name="pay_method" value="Card">
+                                    <label for="card">Card (Visa, Mastercard)</label>
+                                </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="input_block">
+                        <fieldset>
+                            <legend>Choose 2 gifts:</legend>
+                            <div class="checkbox">
+                                <input class="gift_option" type="checkbox" id="gift_pack" name="pack" value="pack">
+                                <label for="pack">pack as a gift</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="gift_option" type="checkbox" id="gift_postcard" name="postcard" value="postcard">
+                                <label for="postcard">add postcard</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="gift_option" type="checkbox" id="gift_discount" name="discount" value="discount">
+                                <label for="discount">provide 2% discount to the next time</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="gift_option" type="checkbox" id="gift_pen" name="pen" value="pen">
+                                <label for="pen">branded pen or pencil</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <p>Total: <b><span id="total_count"></span></b>$</p>
+                        <input id="submit" type="button" value="Complete order" disabled>
+                    </div>
+                </form>
+            </div>
+            <div class="modal_container">
+            </div>
+        </main>
+        <footer>
+            <h3>© 2022 Book Shop - Liudmyla Melnychuk</h3>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
