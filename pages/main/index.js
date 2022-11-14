@@ -168,3 +168,48 @@ function bookCatalog(data) {
         }
     })
 }
+
+//add to cart
+function addToCart(data, index) {
+    tempCart.push(data[index]);
+
+    totalPrice += data[index].price;
+    localStorage.setItem('totalPrice', totalPrice);
+    updateCart(tempCart);
+
+    let btn_confirm = document.getElementById('button_confirm');
+    btn_confirm.disabled = false;
+
+    return totalPrice;
+}
+
+function updateCart(tempCart) {
+    if (tempCart.length > 4) {
+        alert('Your cart is full!');
+    } else {
+        let output = '';
+        for (let item of tempCart) {
+            output += `
+                <div class="book_card">
+                    <img src="${item.imageLink}" alt="image_book">
+                    <div class="about_book">
+                        <p class="title">${item.title}</p>
+                        <p class="author">${item.author}</p>
+                        <button class="button_delete" type="button">
+                            <img id="icon_delete" src="../../assets/icons/delete_icon.svg" alt="delete_icon"/>
+                        </button>
+                    </div>
+                </div>`
+        }
+
+        document.querySelector('.cart_list').innerHTML = output;
+        document.querySelector('.total_count').innerHTML = `${totalPrice}$`;
+
+        const removeButton = document.querySelectorAll('.button_delete');
+        removeButton.forEach((button, index) => {
+            button.onclick = () => {
+                removeFromCart(index);
+            }
+        })
+    }
+}
