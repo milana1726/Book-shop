@@ -115,11 +115,12 @@ document.addEventListener('DOMContentLoaded', () => {
 //book catalog
 function bookCatalog(data) {
     let output = '';
+    let index = 0;
     for (let item of data) {
         output += `
-        <div draggable="true" class="book_card">
+        <div class="book_card">
             <div class="book_info">
-                <img src="${item.imageLink}" alt="image_book">
+                <img src="${item.imageLink}" id="${index}" class="image_book" draggable="true" alt="image_book">
                 <div class="about_book">
                     <p class="title">${item.title}</p>
                     <p class="author">${item.author}</p>
@@ -130,7 +131,8 @@ function bookCatalog(data) {
                 <button class="button_more" type="button">Show more</button>
                 <button class="button_cart" type="button">Add to cart</button>
             </div>
-        </div>`
+        </div>`;
+        index++;
     }
 
     document.querySelector('.book_list').innerHTML = output;
@@ -167,31 +169,70 @@ function bookCatalog(data) {
             addToCart(data, index);
         }
     })
+
+    //drag-and-drop
+    let dragIndex;
+    document.addEventListener("drag", function(event) {
+        dragIndex = event.target.id;
+    }, false);
+
+    document.addEventListener("dragstart", function(event) {
+        event.target.style.cursor = 'grabbing';
+    }, false);
+
+    document.addEventListener("dragend", function(event) {
+        event.target.style.opacity = "";
+    }, false);
+
+    document.addEventListener("dragenter", function(event) {
+        if ( event.target.className == "cart_list" ) {
+            event.target.style.background = "#fee0c1";
+        }
+    }, false);
+
+    document.addEventListener("dragleave", function(event) {
+        if ( event.target.className == "cart_list" ) {
+            event.target.style.background = "none";
+        }
+    }, false);
+
+    document.addEventListener("dragover", function( event ) {
+        event.preventDefault();
+    }, false);
+
+    document.addEventListener("drop", function(event) {
+        if ( event.target.className == "cart_list") {
+                event.target.style.background = "none";
+                addToCart(data, dragIndex);
+        }
+    }, false);
 }
 
 //add to cart
 function addToCart(data, index) {
-    tempCart.push(data[index]);
+    if (tempCart.length !== 4) {
+        tempCart.push(data[index]);
 
-    totalPrice += data[index].price;
-    localStorage.setItem('totalPrice', totalPrice);
-    updateCart(tempCart);
+        totalPrice += data[index].price;
+        localStorage.setItem('totalPrice', totalPrice);
+        updateCart(tempCart);
 
-    let btn_confirm = document.getElementById('button_confirm');
-    btn_confirm.disabled = false;
+        let btn_confirm = document.getElementById('button_confirm');
+        btn_confirm.disabled = false;
+    } else {
+        alert('Your cart is full!');
+    }
 
     return totalPrice;
 }
 
 function updateCart(tempCart) {
-    if (tempCart.length > 4) {
-        alert('Your cart is full!');
-    } else {
-        let output = '';
+    let output = '';
+    if (tempCart.length !== 5) {
         for (let item of tempCart) {
             output += `
                 <div class="book_card">
-                    <img src="${item.imageLink}" alt="image_book">
+                    <img src="${item.imageLink}" class="image_book" alt="image_book">
                     <div class="about_book">
                         <p class="title">${item.title}</p>
                         <p class="author">${item.author}</p>
@@ -220,13 +261,15 @@ function removeFromCart(index) {
         totalPrice -= tempCart[index].price;
         document.querySelector('.total_count').innerHTML = `${totalPrice}$`;
     }
+
     tempCart.splice(index, 1);
     updateCart(tempCart);
 
     if (tempCart.length === 0){
         let btn_confirm = document.getElementById('button_confirm');
         btn_confirm.disabled = true;
-        alert('Your cart is empty!');
+        // alert('Your cart is empty!');
+        document.querySelector('.cart_list').innerHTML = 'Your cart is empty!';
     }
 
     localStorage.setItem('totalPrice', totalPrice);

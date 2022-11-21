@@ -93,14 +93,18 @@ h2 {
 }
 
 .cart_list {
-    width: 100%;
+    width: 95%;
+    height: 170px;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 0px;
+    border: 1px dashed #292929;
     display: flex;
     flex-direction: row;
     gap: 20px;
     flex-wrap: nowrap;
     justify-content: center;
+    text-align: center;
+    color: red;
 }
 
 .book_card {
@@ -111,6 +115,7 @@ h2 {
 .book_info,
 .cart .book_card {
     width: 220px;
+    margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
