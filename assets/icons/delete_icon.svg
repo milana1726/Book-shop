@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 53.96051 74.371651"
+   version="1.1"
+   id="svg922"
+   sodipodi:docname="trash2.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   width="53.96051"
+   height="74.371651"
+   inkscape:export-filename="/home/dirk/Web-DBs/seed-db-github/static/images/trash_can.png"
+   inkscape:export-xdpi="36.142803"
+   inkscape:export-ydpi="36.142803">
+  <metadata
+     id="metadata926">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Trash Can</dc:title>
+        <dc:date>17 Nov 2020</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Dirk Koudstaal</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Free for commercial use</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>openclipart.org</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>Cosmin Negoita </dc:identifier>
+        <dc:source>Cosmin Negoita </dc:source>
+        <dc:relation>https://icon-icons.com/icon/Trash-Can-delete/115312</dc:relation>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>delete</rdf:li>
+            <rdf:li>trash can</rdf:li>
+            <rdf:li>rubbish bin</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:coverage>For Web Design</dc:coverage>
+        <dc:description>Modified Icon from Cosmin Negoita</dc:description>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1880"
+     inkscape:window-height="1016"
+     id="namedview924"
+     showgrid="false"
+     inkscape:zoom="3.2796268"
+     inkscape:cx="-26.92294"
+     inkscape:cy="24.928465"
+     inkscape:window-x="40"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg922"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs906">
+    <style
+       id="style904">.cls-1{fill:#ff2400;}.cls-2{fill:#ba1d08;}</style>
+  </defs>
+  <title
+     id="title908">Trash Can</title>
+  <g
+     id="g1183"
+     transform="translate(-59.496631,12.304612)"
+     inkscape:export-filename="/home/dirk/Web-DBs/seed-db-github/static/images/trash_can.png"
+     inkscape:export-xdpi="43.887691"
+     inkscape:export-ydpi="43.887691">
+    <g
+       transform="rotate(-24,68.523307,177.96729)"
+       id="g1171">
+      <path
+         style="fill:none;stroke:#0000fd;stroke-width:3.6788919;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 153.35245,30.731529 11.60794,-0.29031 10.52614,-0.263257"
+         id="path1053"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:none;stroke:#0000fd;stroke-width:3.6788919;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 153.35245,37.451197 11.60794,-0.29031 10.52615,-0.263258"
+         id="path1053-1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:none;stroke:#0000fd;stroke-width:3.6788919;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 153.35245,44.170866 11.60794,-0.290311 10.52615,-0.263258"
+         id="path1053-5"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+    </g>
+    <path
+       style="fill:#ff2400"
+       inkscape:connector-curvature="0"
+       id="path910"
+       d="M 101.52581,62.067002 H 72.525814 a 6,6 0 0 1 -6,-5.5 l -3.48,-42.5 h 47.999996 l -3.54,42.5 a 6,6 0 0 1 -5.98,5.5 z"
+       class="cls-1" />
+    <path
+       style="fill:#ba1d08"
+       inkscape:connector-curvature="0"
+       id="path912"
+       d="m 104.97103,-11.905891 -12.604484,6.0932387 -0.870463,-1.8006372 a 6,6 0 0 0 -8.013299,-2.7905265 l -7.202549,3.4818487 a 6,6 0 0 0 -2.790527,8.0132999 l 0.870461,1.8006343 -12.604463,6.0932303 a 4,4 0 0 0 -1.860352,5.3421958 l 1.740925,3.601275 50.417871,-24.3729353 -1.74093,-3.6012707 a 4,4 0 0 0 -5.34219,-1.860353 z M 77.090983,-0.64959224 a 2,2 0 0 1 0.930175,-2.67110026 l 7.202551,-3.4818487 a 2,2 0 0 1 2.6711,0.9301757 l 0.870461,1.8006377 -10.803825,5.2227707 z"
+       class="cls-2" />
+    <g
+       transform="translate(39.941868,-3.5947681)"
+       id="g1000">
+      <path
+         class="cls-2"
+         d="m 47.131418,59.661788 a 4,2 0 0 1 -4,-2 v -32 a 4,2 0 0 1 8,0 v 32 a 4,2 0 0 1 -4,2 z"
+         id="path914"
+         inkscape:connector-curvature="0"
+         style="fill:#ba1d08;stroke:none;stroke-width:1.41421354;stroke-opacity:1" />
+      <path
+         class="cls-2"
+         d="m 60.090415,59.588914 a 4,2 4.1 0 1 -3.846769,-2.280871 l 2.287919,-31.918105 a 4,2 4.1 0 1 7.979525,0.571979 l -2.287918,31.918106 a 4,2 4.1 0 1 -4.132757,1.708891 z"
+         id="path914-8"
+         inkscape:connector-curvature="0"
+         style="fill:#ba1d08;stroke:none;stroke-width:1.41421354;stroke-opacity:1" />
+      <path
+         class="cls-2"
+         d="M 34.235086,59.581887 A 2,4 85.7 0 1 30.096384,57.887431 L 27.697065,25.977508 a 2.000001,4.000002 85.7 0 1 7.977484,-0.599831 l 2.39932,31.909924 a 2,4 85.7 0 1 -3.838783,2.294286 z"
+         id="path914-5"
+         inkscape:connector-curvature="0"
+         style="fill:#ba1d08;stroke:none;stroke-width:1.41421354;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
